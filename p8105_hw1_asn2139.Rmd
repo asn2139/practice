@@ -1,6 +1,7 @@
 ---
 title: "p8105_hw1_asn2139"
-output: github_document
+output: html_document
+
 ---
 
 ```{r setup, include=FALSE}
