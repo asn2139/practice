@@ -1,6 +1,6 @@
 ---
 title: "p8105_hw1_asn2139"
-output: html_document
+output: github_document
 
 ---
 
