@@ -71,7 +71,10 @@ as.numeric(factor(y))*samp
 ```{r}
 data("penguins", package = "palmerpenguins")
 penguins
+summary(penguins)
 nrow(penguins)*ncol(penguins)
+
+ggplot(penguins, aes(x=bill_length_mm, y=flipper_length_mm))
 ```
 
 
