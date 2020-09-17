@@ -9,23 +9,65 @@ output: github_document
 library(tidyverse)
 ```
 
-Problem 1
+# Problem 1
 
 Create a data frame comprised of 
 
 1) a random sample of size 10 from a standard normal distribution
 
+
 ```{r}
 samp= rnorm (10)
+length= samp
 ```
 2) a logical vector indicating whether elements of the sample are greater than 0
 
-3)a character vector of length 10
-
 ```{r}
-x= "characters"
+samp >0
 ```
 
+3) a character vector of length 10
+
+```{r}
+y= "characters"
+```
+
+4)a factor vector of length 10, with 3 different factor “levels”
+
+```{r}
+funthings = factor(c("happy", "sad", "angry"))
+class(funthings)
+levels (funthings)
+```
+```{r}
+mean(samp)
+mean (y)
+mean (funthings)
+```
+
+
+
+Second code chunk
+
+convert the logical vector to numeric, and multiply the random sample by the result
+```{r}
+as.numeric(y)*samp
+```
+convert the logical vector to a factor, and multiply the random sample by the result
+```{r}
+factor(y)*samp
+```
+convert the logical vector to a factor and then convert the result to numeric, and multiply the random sample by the result
+
+```{r}
+factor(y)
+as.numeric(factor(y))*samp
+```
+
+# Problem 2
+
+
+# Next question 
 
 
 
