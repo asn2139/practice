@@ -66,9 +66,11 @@ as.numeric(factor(y))*samp
 
 # Problem 2
 
-data("penguins", package = "palmerpenguins")
+
 
 ```{r}
+data("penguins", package = "palmerpenguins")
+penguins
 nrow(penguins)*ncol(penguins)
 ```
 
