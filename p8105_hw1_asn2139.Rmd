@@ -67,7 +67,7 @@ as.numeric(factor(y))*samp
 # Problem 2
 
 
-# Next question 
+
 
 
 
