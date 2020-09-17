@@ -68,14 +68,16 @@ as.numeric(factor(y))*samp
 
 
 
-```{r}
+```{r penguins}
 data("penguins", package = "palmerpenguins")
 penguins
 summary(penguins)
 nrow(penguins)*ncol(penguins)
+ggplot(data=penguins, aes(x=bill_length_mm, 
+                          y=flipper_length_mm, 
+                          color=species))+geom_point()
+mean(pull(penguins, flipper_length_mm), na.rm=TRUE)
 
-ggplot(penguins, aes(x=bill_length_mm, y=flipper_length_mm))
 ```
-
-
+ 
 
